@@ -1,0 +1,18 @@
+$(document).ready(function () {
+    $("#div1").load("http://icareclientes.sky.com.br/ICareEnterpriseWorkFlowUI/Workflow/History", exibir);
+    function exibir() {
+        document.getElementsByClassName("answButton")[0].style.display = "none";
+        document.getElementsByClassName("answButton")[1].style.display = "none";
+        setTimeout(function () {
+            var logindia = document.getElementById("div1").getElementsByTagName("table")[0].rows[1].cells[4].innerText;
+            logins_vip = ['11156', '14640', ' 11925', ' 11251', ' 11194', '12182', '4217', 'aec17379', 'aec12735', 'janrosil', 'liblima', 'asogomes', 'ancamlim', 'aec00704', 'aec18684', 'aec20958', 'aec18467', 'aec20135', 'aec20066', 'aec19996', 'aec17061', 'aec17031', 'aec14430', 'wknonato', 'alsponte', 'anpaulas', 'cafmoliv', 'b2600lma', 'aec20644', 'aec09087', 'aec08971', 'aec11714', 'aec13325', 'aec19190', 'aec14154', 'aec18883', 'aec18855', 'aec16519', 'ser15518', 'ser16926', 'ser16371', 'ser16380', 'ser16753', 'ser15588', 'ser08813', 'ser15049', 'ser16497', 'ser15452', 'ser15517', 'ser16379', 'aec18685', 'aec18828', 'aec16489', 'aec10879', 'aec00490', 'emsneto', 'aec12210', 'aec20355', 'aec10649', 'aec16313', 'aec21296', 'marizcsi', 'aec18635', 'aec20388', 'aec00784', 'thpebarr', 'aec10370', 'aec19391', 'aec20261', 'aec17766', 'aec18103', 'aec17982', 'aec19631', 'pgnguilh', 'aec20274', 'aec20323', 'aec21289', 'aec21290', 'aec03279', 'aec04815', 'derpsilv', 'aec21293', 'aec19219', 'aec21294', 'aec11679', 'aec21295', 'aec16685', 'aec21298', 'aec18881', 'mksarauj', 'aec20282', 'aec21299', 'rafadsil', 'aec21006', 'aec19538', 'aec19298', 'aec18604', 'aec19313', 'aec18850', 'aec18165', 'kon00124', 'kon00118', 'kon00119', 'kon00179', 'kon00180', 'kon00182', 'kon00188', 'kon00189', 'kon00191', 'kon00197', 'kon00192', 'kon00193', 'kon00225', 'kon00194', 'kon00190', 'kon00198', 'kon00195', 'kon00196', 'kon00206', 'aec21191', 'aec21209', 'aec20498', 'aec21192', 'aec21186', 'aec21193', 'aec21194', 'aec21195', 'aec21196', 'aec21198', 'aec21200', 'aec21185', 'aec21204', 'aec21206', 'aec21208', 'aec20434', 'aec21493', 'aec21494', 'aec21495', 'aec21496', '5363', '13334', '10953', '9793', '11163', '5970', '4214', '4950', '7619', '4820', '9753', '10799', '11171', '10437', '7523', '11139', '8696', '11410', '13614', '14617', 'aec20926', 'aec18547', 'aec00179', 'aec19153', 'aec03449', 'aec21310', 'aec19404', 'aec13393', 'aec19412', 'aec19107', 'aec02891', 'aec17048', 'aec03412', 'aec20935', 'aec17025', 'aec16763', 'asdperei', 'aec20936', 'aec19406', 'aec21304', 'aec21306', 'aec02912', 'aec16670', 'aec17081', 'aec20939', 'aec19443', 'aec14460', 'aec01130', 'aec16127', 'aec02975', 'aec17856', 'aec21387', 'aec21434', 'aec13348', 'aec21312', 'aec21378', 'aec19119', 'aec09102', 'aec13932', 'aec08934', 'aec15150', 'aec16195', 'luaarsan', 'aec18160', 'aec21313', 'aec19585', 'aec19363', 'miomsant', 'michespe', 'aec19086', 'aec20519', 'aec17974', 'rtsilva', 'aec20517', 'aec17030', 'aec21072', 'aec14915', 'aec20103', 'aec17091', 'aec19570', 'aec21514', 'aec02740', 'aec12855', 'aec16772', 'aec20641', 'aec04654', 'aec10389', 'aec19134'];
+            if (logins_vip.indexOf(logindia) > -1) {
+                document.getElementsByClassName("answButton")[0].click();
+            }
+            else {
+                document.getElementsByClassName("answButton")[1].click();
+            }
+        }, 4000);
+    }
+})
+$.ajaxSetup({ cache: false });
