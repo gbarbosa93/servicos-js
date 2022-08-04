@@ -42,7 +42,3 @@ document.getElementById('valida_cartao').onclick = function () {
         clickindex4();
     }
 }
-
-function mouseOver() {
-    document.getElementById("smartcard").style.border = "1px solid darkgray";
-};

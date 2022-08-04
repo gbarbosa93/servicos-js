@@ -1,13 +1,11 @@
 //VALIDA SE TEM TELECINE ATIVO
 function valida_telecine() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/TELECINE/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/CINEMA/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/FILMES/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+        if (nome_pacote.match(/TELECINE/) && status_pacote == "Ativo" || nome_pacote.match(/CINEMA/) && status_pacote == "Ativo" || nome_pacote.match(/FILMES/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -20,14 +18,12 @@ function valida_telecine() {
 
 //VALIDA SE TEM HBO ATIVO
 function valida_hbo() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/HBO/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/CINEMA/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/FILMES/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+        if (nome_pacote.match(/HBO/) && status_pacote == "Ativo" || nome_pacote.match(/CINEMA/) && status_pacote == "Ativo" || nome_pacote.match(/FILMES/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -40,14 +36,13 @@ function valida_hbo() {
 
 //VALIDA SE TEM PREMIERE ATIVO
 function valida_premiere() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/PREMIERE/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/FUTEBOL/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/PREMIERE/) && status_pacote == "Ativo" || nome_pacote.match(/FUTEBOL/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -60,14 +55,13 @@ function valida_premiere() {
 
 //VALIDA SE TEM COMBATE ATIVO
 function valida_combate() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/COMBATE/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/COMBATE/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -80,14 +74,13 @@ function valida_combate() {
 
 //VALIDA SE TEM CONMEBOL
 function valida_conmebol() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/CONMEBOL/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/CONMEBOL/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -100,14 +93,13 @@ function valida_conmebol() {
 
 //VALIDA SE TEM COPA DO NORDESTE
 function valida_cpne() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/COPA DO NORDESTE/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/COPA DO NORDESTE/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -120,14 +112,13 @@ function valida_cpne() {
 
 //VALIDA SE TEM CAMPEONATO CARIOCA
 function valida_carioca() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/CAMPEONATO CARIOCA/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/CAMPEONATO CARIOCA/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -140,14 +131,13 @@ function valida_carioca() {
 
 //VALIDA SE TEM ESPN EXTRA ATIVO
 function valida_espn_extra() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/ESPN EXTRA/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/ESPN EXTRA/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -160,14 +150,13 @@ function valida_espn_extra() {
 
 //VALIDA SE TEM DOGTV ATIVO
 function valida_dogtv() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/DOGTV/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/DOG TV/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/DOGTV/) && status_pacote == "Ativo" || nome_pacote.match(/DOG TV/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -180,14 +169,13 @@ function valida_dogtv() {
 
 //VALIDA SE TEM CANAIS INTERNACIONAIS ATIVO
 function valida_internacionais() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/MUNDO ESPECIAL/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/PACOTE MUNDI/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/PACOTE MUNDO/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/EUROPA/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/DEUTSCHE/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/INTERNATIONAL/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/RAI/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/NHK/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/SIC/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/TV5/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/ESPANOLA/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/TVE/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/DW/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/DEUTSCH/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/ARGENTINA/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/CANAL 26/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/MUNDO ESPECIAL/) && status_pacote == "Ativo" || nome_pacote.match(/PACOTE MUNDI/) && status_pacote == "Ativo" || nome_pacote.match(/PACOTE MUNDO/) && status_pacote == "Ativo" || nome_pacote.match(/EUROPA/) && status_pacote == "Ativo" || nome_pacote.match(/DEUTSCHE/) && status_pacote == "Ativo" || nome_pacote.match(/INTERNATIONAL/) && status_pacote == "Ativo" || nome_pacote.match(/RAI/) && status_pacote == "Ativo" || nome_pacote.match(/NHK/) && status_pacote == "Ativo" || nome_pacote.match(/SIC/) && status_pacote == "Ativo" || nome_pacote.match(/TV5/) && status_pacote == "Ativo" || nome_pacote.match(/ESPANOLA/) && status_pacote == "Ativo" || nome_pacote.match(/TVE/) && status_pacote == "Ativo" || nome_pacote.match(/DW/) && status_pacote == "Ativo" || nome_pacote.match(/DEUTSCH/) && status_pacote == "Ativo" || nome_pacote.match(/ARGENTINA/) && status_pacote == "Ativo" || nome_pacote.match(/CANAL 26/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -200,14 +188,13 @@ function valida_internacionais() {
 
 //VALIDA SE TEM PLAYBOY ATIVO
 function valida_playboy_tv() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/PLAYBOY/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/PLAY BOY/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/PLAYBOY/) && status_pacote == "Ativo" || nome_pacote.match(/PLAY BOY/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -220,14 +207,13 @@ function valida_playboy_tv() {
 
 //VALIDA SE TEM SEXYHOT ATIVO
 function valida_sexy_hot() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/SEXYHOT/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/SEXY HOT/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/SEXYHOT/) && status_pacote == "Ativo" || nome_pacote.match(/SEXY HOT/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -238,17 +224,15 @@ function valida_sexy_hot() {
     }
 }
 
-
 //VALIDA SE TEM SEXPRIVE ATIVO
 function valida_sexy_prive() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/SEX PRIVÉ/) && status_pacote == "Ativo" || nome_pacote_formatado.match(/SEXPRIVE/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/SEX PRIVE/) && status_pacote == "Ativo" || nome_pacote.match(/SEX PRIVÉ/) && status_pacote == "Ativo" || nome_pacote.match(/SEXPRIVE/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -261,14 +245,13 @@ function valida_sexy_prive() {
 
 //VALIDA SE TEM BIG BROTHER
 function valida_big_brother() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/BROTHER/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+
+        if (nome_pacote.match(/BROTHER/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -281,14 +264,12 @@ function valida_big_brother() {
 
 //VALIDA SE TEM ESR
 function valida_esr() {
-    var pacoteEncontrado = false;
     var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
+    var pacoteEncontrado = false;
     for (var i = 0; i < tabela.length; i++) {
-        var tr = tabela[i];
-        var nome_pacote = tr.cells[0].innerText;
-        var status_pacote = tr.cells[1].innerText;
-        var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-        if (nome_pacote_formatado.match(/ESR/) && status_pacote == "Ativo") {
+        var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+        var status_pacote = tabela[i].cells[1].innerText;
+        if (nome_pacote.match(/ESR/) && status_pacote == "Ativo") {
             clickindex0();
             pacoteEncontrado = true;
             break;
@@ -301,7 +282,6 @@ function valida_esr() {
 
 var prod_col1 = [];
 setTimeout(function () {
-    var tabela = document.getElementById("SideMenu").getElementsByTagName("table")[3].querySelectorAll('tbody tr');
 
     // PUXA OS PRODUTOS DA COLUNA 1 PRA UMA ARRAY
     for (var prod = 0; prod < tabela.length; prod++) {
@@ -359,15 +339,24 @@ setTimeout(function () {
         "PLANO BÁSICO": [2, 3, 6, 7, 8, 9, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 75, 163, 164, 165, 166]
     };
 
-    var base_canais_a_la_carte_1 = {
+    var base_canais_a_la_carte = {
+        "PPV": [281, 282, 283, 284, 285, 286, 287, 288, 289],
         "TELECINE": [100, 101, 102, 103, 104, 105, 500, 501, 502, 503, 504, 505],
-        "PREMIERE": [220, 221, 222, 227, 228, 233, 234, 235, 236, 237, 238, 239, 240, 243, 620, 621, 622, 627, 628, 633, 634, 635, 636, 637, 638, 639, 640],
-        "INTERNACIONAIS": [178, 179, 180, 181, 182, 183],
         "HBO": [120, 121, 122, 124, 125, 126, 127, 128, 520, 521, 522, 524, 525, 526, 527, 528],
+        "PREMIERE": [233, 234, 235, 236, 237, 238, 239, 240, 632, 633, 634, 635, 636, 637, 638, 639, 640],
+        "ESR": [603],
         "ESPN EXTRA": [596, 600],
+        "": [],
+        "": [],
+        "INTERNACIONAIS": [178, 179, 180, 181, 182, 183],
+        "BIG BROTHER BRASIL": [93, 493],
         "DOGTV": [480],
-        "ADULTOS": [270, 272, 273, 274, 277]
+        "PLAYBOY TV": [272, 273],
+        "SEX PRIVE": [274, 277],
+        "SEXY HOT": [270]
     };
+
+    var canais_globo = [4, 5, 10, 12, 404, 405, 410, 412];
 
     var base_opcionais_hd = {
         "OPCIONAL EXTRA HD": ['451', '458', '495', '461', '471', '474', '486', '490', '491', '492', '509', '514', '516', '538', '549', '559', '571', '597', '598', '551', '610'],
@@ -381,37 +370,94 @@ setTimeout(function () {
         "OPCIONAL HD FULL": ['413', '407', '409', '415', '434', '435', '437', '439', '440', '441', '442', '443', '444', '556', '450', '451', '456', '457', '458', '495', '460', '461', '471', '472', '473', '474', '476', '478', '464', '485', '486', '487', '490', '491', '492', '507', '508', '510', '511', '509', '513', '514', '517', '536', '537', '538', '539', '540', '541', '542', '543', '548', '549', '559', '560', '571', '594', '597', '598', '599', '610']
     };
 
-    var base_canais_a_la_carte = ['120', '121', '122', '124', '125', '126', '127', '128', '520', '521', '522', '524', '525', '526', '527', '528', '100', '101', '102', '103', '104', '105', '500', '501', '502', '503', '504', '505', '190', '590', '270', '272', '273', '274', '277', '233', '633', '634', '635', '636', '637', '638', '639', '640', '480', '596', '600', '178', '179', '180', '181', '182', '183', '93', '493'];
-
-    // RELAÇÃO DE TODOS OS VCS QUE TEMOS ATIVOS ATUALMENTE
-    var todos_canais = ['2', '3', '6', '7', '8', '9', '11', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '28', '31', '32', '33', '34', '35', '37', '38', '39', '40', '41', '42', '43', '44', '50', '51', '52', '156', '55', '56', '57', '58', '60', '62', '70', '71', '75', '76', '78', '81', '83', '84', '85', '86', '90', '91', '93', '100', '101', '102', '103', '104', '105', '107', '108', '109', '110', '111', '113', '114', '115', '116', '117', '120', '121', '122', '124', '125', '126', '127', '128', '136', '137', '138', '139', '140', '141', '142', '143', '148', '149', '150', '155', '156', '157', '158', '159', '160', '161', '162', '163', '164', '165', '166', '170', '171', '173', '174', '177', '191', '195', '196', '197', '198', '210', '233', '274', '277', '407', '409', '413', '415', '431', '432', '433', '434', '435', '437', '438', '439', '440', '441', '442', '443', '444', '556', '450', '451', '455', '456', '457', '458', '495', '460', '461', '470', '471', '472', '473', '474', '476', '477', '478', '464', '483', '485', '486', '487', '489', '490', '491', '492', '493', '500', '501', '502', '503', '504', '505', '507', '508', '509', '510', '511', '513', '514', '516', '517', '520', '521', '522', '524', '525', '526', '527', '528', '536', '537', '538', '539', '540', '541', '542', '543', '548', '549', '550', '551', '558', '559', '560', '571', '572', '573', '576', '577', '594', '595', '596', '597', '598', '599', '600', '603', '606', '610', '633', '701', '702', '703', '704', '705', '706', '707', '708', '709', '710', '711', '712', '713', '714', '715', '716', '717', '718', '719', '720', '721', '722', '723', '724', '725', '726', '727', '728', '729', '730', '731', '732', '776', '777', '778', '779', '782', '783', '784', '785', '786', '787', '789', '790', '791', '792', '793', '794', '795', '796'];
 
     document.getElementById('valida_canal').onclick = function () {
         var numero_canal = document.getElementById('numero_canal').value;
+        var canal_encontrado = false;
         // SE NENHUM CANAL FOR DIGITADO E CLICAR EM AVANÇAR, NÃO PERMITIREMOS QUE SIGA COM O FLUXO
         if (numero_canal == "") {
             alert('Nenhuma informação inserida, digite o número do canal e pressione em "Confirmar se o canal faz parte da programação SKY"');
             return;
         }
 
-        // PALIATIVO, VERIFICA SE CANAL 603 - ESR FAZ PARTE DO PACOTE
-        if (numero_canal == 603) {
-            if (prod_col1.indexOf("COMBO ADVANCED II CINEMA + MUNDO ESPECIAL HD 2019") > -1 || prod_col1.indexOf("COMBO ADVANCED II TOP HD 2018") > -1 || prod_col1.indexOf("COMBO ADVANCED II TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO ADVANCED II TOTAL 2018") > -1 || prod_col1.indexOf("COMBO ADVANCED III TOP HD 2018") > -1 || prod_col1.indexOf("COMBO ADVANCED III TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO ADVANCED III TOTAL 2018") > -1 || prod_col1.indexOf("COMBO ADVANCED TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO ADVANCED TOTAL 2018") > -1 || prod_col1.indexOf("COMBO FULL CINEMA HD 2019") > -1 || prod_col1.indexOf("COMBO FULL CINEMA HD 2020") > -1 || prod_col1.indexOf("COMBO FULL FOX PREMIUM + PREMIERE HD 2020") > -1 || prod_col1.indexOf("COMBO FULL HBO + PREMIERE HD 2020") > -1 || prod_col1.indexOf("COMBO FULL HBO HD 2019") > -1 || prod_col1.indexOf("COMBO FULL HBO HD 2020") > -1 || prod_col1.indexOf("COMBO FULL PREMIERE HD 2018") > -1 || prod_col1.indexOf("COMBO FULL PREMIERE HD 2020") > -1 || prod_col1.indexOf("COMBO FULL PREMIERE TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO FULL TELECINE + PREMIERE HD 2020") > -1 || prod_col1.indexOf("COMBO FULL TELECINE HD 2019") > -1 || prod_col1.indexOf("COMBO FULL TELECINE HD 2020") > -1 || prod_col1.indexOf("COMBO FULL TOP HD 2018") > -1 || prod_col1.indexOf("COMBO FULL TOP HD 2019") > -1 || prod_col1.indexOf("COMBO FULL TOP HD 2020") > -1 || prod_col1.indexOf("COMBO FULL TOP 2018") > -1 || prod_col1.indexOf("COMBO FULL TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER CINEMA HD 2019") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER CINEMA HD 2020") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER HBO HD 2019") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER HBO HD 2020") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER PREMIERE HD 2018") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER PREMIERE HD 2020") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER PREMIERE TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER TELECINE HD 2019") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER TELECINE HD 2020") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER TOP HD 2018") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER TOP HD 2019") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER TOP HD 2020") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER TOP 2018") > -1 || prod_col1.indexOf("COMBO MEDIA CENTER TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO MEGA TOP II HD 2019") > -1 || prod_col1.indexOf("COMBO MEGA TOP II HD 2020") > -1 || prod_col1.indexOf("COMBO PLUS CINEMA + MUNDO ESPECIAL HD 2019") > -1 || prod_col1.indexOf("COMBO PLUS TOP HD 2018") > -1 || prod_col1.indexOf("COMBO PLUS TOP HD 2018 ESPECIAL") > -1 || prod_col1.indexOf("COMBO PLUS TOP HD 2019") > -1 || prod_col1.indexOf("COMBO PLUS TOP HD 2020") > -1 || prod_col1.indexOf("COMBO PLUS TOTAL HD 2018") > -1 || prod_col1.indexOf("COMBO PLUS TOTAL 2018") > -1 || prod_col1.indexOf("NEW COMBO ADVANCED II TOTAL HD 2018") > -1 || prod_col1.indexOf("NEW COMBO ADVANCED III TOTAL HD 2018") > -1 || prod_col1.indexOf("NEW COMBO FULL CINEMA HD 2018") > -1 || prod_col1.indexOf("NEW COMBO FULL FUTEBOL HD 2018") > -1 || prod_col1.indexOf("NEW COMBO FULL FUTEBOL 2018") > -1 || prod_col1.indexOf("NEW COMBO FULL TELECINE HD 2018") > -1 || prod_col1.indexOf("NEW COMBO FULL TOP HD 2018") > -1 || prod_col1.indexOf("NEW COMBO MEDIA CENTER CINEMA HD 2018") > -1 || prod_col1.indexOf("NEW COMBO MEDIA CENTER FUTEBOL HD 2018") > -1 || prod_col1.indexOf("NEW COMBO MEDIA CENTER FUTEBOL 2018") > -1 || prod_col1.indexOf("NEW COMBO MEDIA CENTER TELECINE HD 2018") > -1 || prod_col1.indexOf("NEW COMBO MEDIA CENTER TELECINE HD 2018 ESPECIAL") > -1 || prod_col1.indexOf("NEW COMBO MEDIA CENTER TOP HD 2018") > -1 || prod_col1.indexOf("NEW COMBO MEDIA CENTER TOP HD 2018 ESPECIAL") > -1 || prod_col1.indexOf("NEW COMBO PLUS TOTAL HD 2018") > -1) {
-                clickindex0();
-                return;
-            }
-            else {
-                consultaCanal();
-                return;
+        // VALIDA SE CANAL DIGITADO FOI NÚMERAÇÃO GLOBO
+        for (i = 0; i < canais_globo.length; i++) {
+            if (numero_canal == canais_do_pacote[i]) {
+                clickindex2();
+                break;
             }
         }
 
-        // VALIDA SE É UM CANAL OPCIONAL (DE A LA CARTE) 
-        if (numero_canal == 100 || numero_canal == 101 || numero_canal == 102 || numero_canal == 103 || numero_canal == 104 || numero_canal == 105 || numero_canal == 500 || numero_canal == 501 || numero_canal == 502 || numero_canal == 503 || numero_canal == 504 || numero_canal == 505) {
-            valida_telecine();
-            return;
+        for (i = 0; i < base_canais_a_la_carte["PREMIERE"].length; i++) {
+            if (numero_canal == base_canais_a_la_carte["PPV"][i]) {
+                canal_encontrado = true;
+                valida_ppv();
+                break;
 
-        } else if (numero_canal == 220 || numero_canal == 221 || numero_canal == 222 || numero_canal == 227 || numero_canal == 228 || numero_canal == 233 || numero_canal == 234 || numero_canal == 235 || numero_canal == 236 || numero_canal == 237 || numero_canal == 238 || numero_canal == 239 || numero_canal == 240 || numero_canal == 243 || numero_canal == 620 || numero_canal == 621 || numero_canal == 622 || numero_canal == 627 || numero_canal == 628 || numero_canal == 633 || numero_canal == 634 || numero_canal == 635 || numero_canal == 636 || numero_canal == 637 || numero_canal == 638 || numero_canal == 639 || numero_canal == 640) {
+            } else if (numero_canal == base_canais_a_la_carte["TELECINE"][i]) {
+                canal_encontrado = true;
+                valida_telecine();
+                break;
+
+            } else if (numero_canal == base_canais_a_la_carte["HBO"][i]) {
+                canal_encontrado = true;
+                valida_hbo();
+                break;
+
+            } else if (numero_canal == base_canais_a_la_carte["PREMIERE"][i]) {
+                canal_encontrado = true;
+                valida_premiere();
+                break;
+
+            } else if (numero_canal == base_canais_a_la_carte["INTERNACIONAIS"][i]) {
+                canal_encontrado = true;
+                valida_internacionais();
+                break;
+
+            } else if (numero_canal == base_canais_a_la_carte["COMBATE"][i]) {
+                canal_encontrado = true;
+                valida_combate();
+                break;
+
+            } else if (numero_canal == base_canais_a_la_carte["PLAYBOY TV"][i]) {
+                canal_encontrado = true;
+                valida_playboy_tv();
+                break;
+
+            } else if (numero_canal == base_canais_a_la_carte["SEX PRIVE"][i]) {
+                canal_encontrado = true;
+                valida_sexy_prive();
+                break;
+
+            } else if (numero_canal == base_canais_a_la_carte["SEXY HOT"][i]) {
+                canal_encontrado = true;
+                valida_sexy_hot();
+                break;
+            }
+        }
+
+
+        // VALIDA SE É UM CANAL OPCIONAL (DE A LA CARTE) 
+        var pacoteEncontrado = false;
+        for (i = 0; i < base_canais_a_la_carte_1.length; i++) {
+            if (numero_canal == base_canais_a_la_carte_1["TELECINE"][i]) {
+                for (var j = 0; j < tabela.length; j++) {
+                    var nome_pacote = tabela[j].cells[0].innerText.split("-")[0].trim().toUpperCase();
+                    var status_pacote = tabela[j].cells[1].innerText;
+                    if (nome_pacote.match(/TELECINE/) && status_pacote == "Ativo" || nome_pacote.match(/CINEMA/) && status_pacote == "Ativo" || nome_pacote.match(/FILMES/) && status_pacote == "Ativo") {
+                        clickindex0();
+                        pacoteEncontrado = true;
+                        break;
+                    }
+                }
+                if (pacoteEncontrado === false) {
+                    clickindex1();
+                }
+
+            }
+        }
+
+        if (numero_canal == 220 || numero_canal == 221 || numero_canal == 222 || numero_canal == 227 || numero_canal == 228 || numero_canal == 233 || numero_canal == 234 || numero_canal == 235 || numero_canal == 236 || numero_canal == 237 || numero_canal == 238 || numero_canal == 239 || numero_canal == 240 || numero_canal == 243 || numero_canal == 620 || numero_canal == 621 || numero_canal == 622 || numero_canal == 627 || numero_canal == 628 || numero_canal == 633 || numero_canal == 634 || numero_canal == 635 || numero_canal == 636 || numero_canal == 637 || numero_canal == 638 || numero_canal == 639 || numero_canal == 640) {
             valida_premiere();
             return;
 
@@ -452,6 +498,8 @@ setTimeout(function () {
             return;
 
         } else if (numero_canal == 603) {
+
+            
             valida_esr();
             return;
 
@@ -472,7 +520,6 @@ setTimeout(function () {
         // VALIDA SE É GLOBO POIS SE FOR, SERA DIRECIONADO PRA SAIDA 3
         if (numero_canal == 4 || numero_canal == 404 || numero_canal == 5 || numero_canal == 405 || numero_canal == "10" || numero_canal == "410" || numero_canal == "12" || numero_canal == "412") {
             clickindex2();
-            return;
         }
 
         // VALIDA SE É UM CANAL FECHADO DOS PACOTES OPCIONAIS HDTV FULL, EXTRA
@@ -587,11 +634,9 @@ setTimeout(function () {
         function consultaCanal() {
             for (var i = 0; i < tabela.length; i++) {
                 // VALIDA PACOTE PARA SABER SE O CANAL DIGITADO ESTÁ NA COMPOSIÇÃO
-                var tr = tabela[i];
-                var nome_pacote = tr.cells[0].innerText;
                 // REMOVE OS "- A" E "-P" DOS NOMES DOS PACOTES
-                var nome_pacote_formatado = nome_pacote.split("-")[0].trim().toUpperCase();
-                if (nome_pacote_formatado.match(/ADVANCED HD/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/COMBO PLUS/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/COMBO ADVANCED/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/COMBO ADVANCED/) && nome_pacote_formatado.match(/2019/) || nome_pacote_formatado.match(/NEW COMBO FULL/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/COMBO MEDIA CENTER/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/COMBO FULL/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/COMBO PLUS CINEMA/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/MUNDO ESPECIAL/) || nome_pacote_formatado.match(/ADVANCED/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/HD/)) {
+                var nome_pacote = tabela[i].cells[0].innerText.split("-")[0].trim().toUpperCase();
+                if (nome_pacote.match(/ADVANCED HD/) && nome_pacote.match(/2018/) || nome_pacote.match(/COMBO PLUS/) && nome_pacote.match(/2018/) || nome_pacote.match(/COMBO ADVANCED/) && nome_pacote.match(/2018/) || nome_pacote.match(/COMBO ADVANCED/) && nome_pacote.match(/2019/) || nome_pacote.match(/NEW COMBO FULL/) && nome_pacote.match(/2018/) || nome_pacote.match(/COMBO MEDIA CENTER/) && nome_pacote.match(/2018/) || nome_pacote.match(/COMBO FULL/) && nome_pacote.match(/2018/) || nome_pacote.match(/COMBO PLUS CINEMA/) && nome_pacote.match(/2019/) && nome_pacote.match(/MUNDO ESPECIAL/) || nome_pacote.match(/ADVANCED/) && nome_pacote.match(/2019/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2018["ADVANCED HD 2018"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2018["ADVANCED HD 2018"][i].toString());
                     }
@@ -603,7 +648,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/MASTER/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/MASTER/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/MASTER/) && nome_pacote.match(/2018/) || nome_pacote.match(/MASTER/) && nome_pacote.match(/2019/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2018["MASTER HD 2018"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2018["MASTER HD 2018"][i].toString());
                     }
@@ -615,7 +660,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/SMART/) && nome_pacote_formatado.match(/2018/) || nome_pacote_formatado.match(/SMART/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/SMART/) && nome_pacote.match(/2018/) || nome_pacote.match(/SMART/) && nome_pacote.match(/2019/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2018["SMART HD 2018"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2018["SMART HD 2018"][i].toString());
                     }
@@ -627,7 +672,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/COMBO MEDIA CENTER/) && nome_pacote_formatado.match(/2019/) || nome_pacote_formatado.match(/COMBO FULL/) && nome_pacote_formatado.match(/2019/) || nome_pacote_formatado.match(/COMBO PLUS/) && nome_pacote_formatado.match(/2019/) || nome_pacote_formatado.match(/COMBO MEGA/) && nome_pacote_formatado.match(/2019/)) {
+                else if (nome_pacote.match(/COMBO MEDIA CENTER/) && nome_pacote.match(/2019/) || nome_pacote.match(/COMBO FULL/) && nome_pacote.match(/2019/) || nome_pacote.match(/COMBO PLUS/) && nome_pacote.match(/2019/) || nome_pacote.match(/COMBO MEGA/) && nome_pacote.match(/2019/)) {
                     for (var i = 0; i < base_pacotes_2019["MEGA HD 2019"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2019["MEGA HD 2019"][i].toString());
                     }
@@ -639,7 +684,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/EASY/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/SD/)) {
+                else if (nome_pacote.match(/EASY/) && nome_pacote.match(/2019/) && nome_pacote.match(/SD/)) {
                     for (var i = 0; i < base_pacotes_2019["EASY SD 2019"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2019["EASY SD 2019"][i].toString());
                     }
@@ -651,7 +696,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/EASY/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/EASY/) && nome_pacote.match(/2019/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2019["EASY HD 2019"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2019["EASY HD 2019"][i].toString());
                     }
@@ -663,7 +708,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/FUN/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/SD/)) {
+                else if (nome_pacote.match(/FUN/) && nome_pacote.match(/2019/) && nome_pacote.match(/SD/)) {
                     for (var i = 0; i < base_pacotes_2019["FUN SD 2019"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2019["FUN SD 2019"][i].toString());
                     }
@@ -675,7 +720,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/FUN/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/FUN/) && nome_pacote.match(/2019/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2019["FUN HD 2019"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2019["FUN HD 2019"][i].toString());
                     }
@@ -687,7 +732,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/SMART/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/SD/)) {
+                else if (nome_pacote.match(/SMART/) && nome_pacote.match(/2019/) && nome_pacote.match(/SD/)) {
                     for (var i = 0; i < base_pacotes_2019["SMART SD 2019"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2019["SMART SD 2019"][i].toString());
                     }
@@ -699,7 +744,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/MASTER/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/SD/)) {
+                else if (nome_pacote.match(/MASTER/) && nome_pacote.match(/2019/) && nome_pacote.match(/SD/)) {
                     for (var i = 0; i < base_pacotes_2019["MASTER SD 2019"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2019["MASTER SD 2019"][i].toString());
                     }
@@ -711,7 +756,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/ADVANCED/) && nome_pacote_formatado.match(/2019/) && nome_pacote_formatado.match(/SD/)) {
+                else if (nome_pacote.match(/ADVANCED/) && nome_pacote.match(/2019/) && nome_pacote.match(/SD/)) {
                     for (var i = 0; i < base_pacotes_2018["ADVANCED SD 2018"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2018["ADVANCED SD 2018"][i].toString());
                     }
@@ -723,7 +768,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/COMBO MEGA/) && nome_pacote_formatado.match(/2020/) || nome_pacote_formatado.match(/COMBO PLUS/) && nome_pacote_formatado.match(/2020/) || nome_pacote_formatado.match(/COMBO FULL/) && nome_pacote_formatado.match(/2020/) || nome_pacote_formatado.match(/COMBO MEDIA CENTER/) && nome_pacote_formatado.match(/2020/)) {
+                else if (nome_pacote.match(/COMBO MEGA/) && nome_pacote.match(/2020/) || nome_pacote.match(/COMBO PLUS/) && nome_pacote.match(/2020/) || nome_pacote.match(/COMBO FULL/) && nome_pacote.match(/2020/) || nome_pacote.match(/COMBO MEDIA CENTER/) && nome_pacote.match(/2020/)) {
                     for (var i = 0; i < base_pacotes_2020["MEGA HD 2020"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2020["MEGA HD 2020"][i].toString());
                     }
@@ -735,7 +780,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/COMBO MEGA/) && nome_pacote_formatado.match(/2021/) || nome_pacote_formatado.match(/COMBO FULL/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/COMBO MEGA/) && nome_pacote.match(/2021/) || nome_pacote.match(/COMBO FULL/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_2021["MEGA HD 2021"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2021["MEGA HD 2021"][i].toString());
                     }
@@ -747,7 +792,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/EASY/) && nome_pacote_formatado.match(/2020/) && nome_pacote_formatado.match(/SD/)) {
+                else if (nome_pacote.match(/EASY/) && nome_pacote.match(/2020/) && nome_pacote.match(/SD/)) {
                     for (var i = 0; i < base_pacotes_2020["EASY SD 2020"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2020["EASY SD 2020"][i].toString());
                     }
@@ -759,7 +804,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/EASY/) && nome_pacote_formatado.match(/2020/) && nome_pacote_formatado.match(/HD/) || nome_pacote_formatado.match(/EASY/) && nome_pacote_formatado.match(/2021/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/EASY/) && nome_pacote.match(/2020/) && nome_pacote.match(/HD/) || nome_pacote.match(/EASY/) && nome_pacote.match(/2021/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2020["EASY HD 2020"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2020["EASY HD 2020"][i].toString());
                     }
@@ -771,7 +816,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/FUN/) && nome_pacote_formatado.match(/2020/) && nome_pacote_formatado.match(/SD/)) {
+                else if (nome_pacote.match(/FUN/) && nome_pacote.match(/2020/) && nome_pacote.match(/SD/)) {
                     for (var i = 0; i < base_pacotes_2020["FUN SD 2020"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2020["FUN SD 2020"][i].toString());
                     }
@@ -783,7 +828,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/FUN/) && nome_pacote_formatado.match(/2020/) && nome_pacote_formatado.match(/HD/) || nome_pacote_formatado.match(/FUN/) && nome_pacote_formatado.match(/2021/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/FUN/ && /HD/) && nome_pacote.match(/2020/) && nome_pacote.match(/HD/) || nome_pacote.match(/FUN/) && nome_pacote.match(/2021/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2020["FUN HD 2020"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2020["FUN HD 2020"][i].toString());
                     }
@@ -795,7 +840,7 @@ setTimeout(function () {
                     }
                 }
 
-                else if (nome_pacote_formatado.match(/MEGA/) && nome_pacote_formatado.match(/2020/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/MEGA/) && nome_pacote.match(/2020/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2020["MEGA HD 2020"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2020["MEGA HD 2020"][i].toString());
                     }
@@ -806,7 +851,7 @@ setTimeout(function () {
                         clickindex1();
                     }
                 } // PACOTES COMBOS 4K
-                else if (nome_pacote_formatado.match(/EXPERIENCE/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/EXPERIENCE/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_4k["COMBO 4K TOTAL EXPERIENCE"].length; i++) {
                         canais_do_pacote.push(base_pacotes_4k["COMBO 4K TOTAL EXPERIENCE"][i].toString());
                     }
@@ -817,7 +862,7 @@ setTimeout(function () {
                         clickindex1();
                     }
                 }
-                else if (nome_pacote_formatado.match(/4K/) && nome_pacote_formatado.match(/CINEMA/) && nome_pacote_formatado.match(/CONMEBOL/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/4K/) && nome_pacote.match(/CINEMA/) && nome_pacote.match(/CONMEBOL/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_4k["COMBO 4K CINEMA CONMEBOL"].length; i++) {
                         canais_do_pacote.push(base_pacotes_4k["COMBO 4K CINEMA CONMEBOL"][i].toString());
                     }
@@ -828,7 +873,7 @@ setTimeout(function () {
                         clickindex1();
                     }
                 }
-                else if (nome_pacote_formatado.match(/4K/) && nome_pacote_formatado.match(/HBO/) && nome_pacote_formatado.match(/CONMEBOL/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/4K/) && nome_pacote.match(/HBO/) && nome_pacote.match(/CONMEBOL/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_4k["COMBO 4K HBO CONMEBOL"].length; i++) {
                         canais_do_pacote.push(base_pacotes_4k["COMBO 4K HBO CONMEBOL"][i].toString());
                     }
@@ -839,7 +884,7 @@ setTimeout(function () {
                         clickindex1();
                     }
                 }
-                else if (nome_pacote_formatado.match(/4K/) && nome_pacote_formatado.match(/PREMIERE/) && nome_pacote_formatado.match(/CONMEBOL/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/4K/) && nome_pacote.match(/PREMIERE/) && nome_pacote.match(/CONMEBOL/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_4k["COMBO 4K PREMIERE CONMEBOL"].length; i++) {
                         canais_do_pacote.push(base_pacotes_4k["COMBO 4K PREMIERE CONMEBOL"][i].toString());
                     }
@@ -850,7 +895,7 @@ setTimeout(function () {
                         clickindex1();
                     }
                 }
-                else if (nome_pacote_formatado.match(/4K/) && nome_pacote_formatado.match(/TELECINE/) && nome_pacote_formatado.match(/CONMEBOL/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/4K/) && nome_pacote.match(/TELECINE/) && nome_pacote.match(/CONMEBOL/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_4k["COMBO 4K TELECINE CONMEBOL"].length; i++) {
                         canais_do_pacote.push(base_pacotes_4k["COMBO 4K TELECINE CONMEBOL"][i].toString());
                     }
@@ -861,7 +906,7 @@ setTimeout(function () {
                         clickindex1();
                     }
                 }
-                else if (nome_pacote_formatado.match(/POP/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/POP/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_basicos["POP"].length; i++) {
                         canais_do_pacote.push(base_pacotes_basicos["POP"][i].toString());
                     }
@@ -872,7 +917,7 @@ setTimeout(function () {
                         clickindex1();
                     }
                 }
-                else if (nome_pacote_formatado.match(/MEGA PLUS/) && nome_pacote_formatado.match(/2021/)) {
+                else if (nome_pacote.match(/MEGA PLUS/) && nome_pacote.match(/2021/)) {
                     for (var i = 0; i < base_pacotes_2021["MEGA PLUS 2021"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2021["MEGA PLUS 2021"][i].toString());
                         if (canais_do_pacote.indexOf(numero_canal) > - 1) {
@@ -883,7 +928,7 @@ setTimeout(function () {
                         }
                     }
                 }
-                else if (nome_pacote_formatado.match(/FUN PLUS/) && nome_pacote_formatado.match(/2022/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/FUN PLUS/) && nome_pacote.match(/2022/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2022["FUN PLUS HD 2022"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2022["FUN PLUS HD 2022"][i].toString());
                         if (canais_do_pacote.indexOf(numero_canal) > - 1) {
@@ -894,7 +939,7 @@ setTimeout(function () {
                         }
                     }
                 }
-                else if (nome_pacote_formatado.match(/MEGA PLUS/) && nome_pacote_formatado.match(/2022/) && nome_pacote_formatado.match(/HD/)) {
+                else if (nome_pacote.match(/MEGA PLUS/) && nome_pacote.match(/2022/) && nome_pacote.match(/HD/)) {
                     for (var i = 0; i < base_pacotes_2022["MEGA PLUS HD 2022"].length; i++) {
                         canais_do_pacote.push(base_pacotes_2022["MEGA PLUS HD 2022"][i].toString());
                         if (canais_do_pacote.indexOf(numero_canal) > - 1) {
