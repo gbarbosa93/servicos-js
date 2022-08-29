@@ -96,7 +96,7 @@
                                         if (pac_basico.indexOf(num_canal) > -1) {
                                             console.log("Canal faz parte do pacote do cliente");
                                         } else {
-                                            //console.log("Canal não faz parte do pacote do cliente");
+                                            consulta_alacarte(tabela, num_canal);
                                         }
                                         break;
                                     }
